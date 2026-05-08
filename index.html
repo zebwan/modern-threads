@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Threads</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="images/modernthreads.png" class="logo" alt="Modern Threads" />
+   <ul class="nav-links">
+  <li><a href="#collection">Collection</a></li>
+</ul>
+
+      <div class="cart" onclick="showCart()">
+        🛒
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+
+    <!-- SPLIT HERO -->
+<section class="split-hero" aria-label="Featured categories">
+  <!-- LEFT PANEL (Mens) -->
+  <a class="panel left" href="#bottoms" style="--bg:url('images/leftimage.jpg')">
+    <div class="panel-overlay">
+      <span class="eyebrow">MENS</span>
+      <h2 class="headline">Modern Threads Collection Spring</h2>
+      <span class="cta-link">SHOP NOW</span>
+    </div>
+  </a>
+
+  <!-- RIGHT PANEL (Womens) -->
+  <a class="panel right" href="#tops" style="--bg:url('images/rightimage.jpg')">
+    <div class="panel-overlay">
+      <span class="eyebrow">WOMENS</span>
+      <h2 class="headline">Modern Threads Collection Spring</h2>
+      <span class="cta-link">SHOP NOW</span>
+    </div>
+  </a>
+</section>
+
+<!-- CAMPAIGN INTRO -->
+<section class="campaign-intro" aria-label="Season message">
+  <div class="campaign-inner">
+    <h2 class="campaign-headline">
+      Spring returns with a familiar calm — longer days, open windows, and that easy sense of possibility.
+      This season leans into nostalgia with a modern optimism, blending effortless silhouettes for every hour of the day.
+    </h2>
+    <a href="#" class="campaign-link">DISCOVER THE CAMPAIGN</a>
+  </div>
+</section>
+
+<section id="collection" class="catalog">
+  <h2 class="catalog-title">Modern Threads Collection</h2>
+
+  <div class="grid-3">
+    <!-- Row 1 -->
+    <article class="card" data-name="Men’s Black Slim-Fit Blazer">
+      <img src="images/mens_black_slimfit_blazer.png" alt="Men’s Black Slim-Fit Blazer">
+      <h3 class="card-name">Men’s Black Slim-Fit Blazer</h3>
+      <div class="card-price">RM399</div>
+    </article>
+
+    <article class="card" data-name="Men’s White Oxford Shirt">
+      <img src="images/mens_white_oxford_shirt.png" alt="Men’s White Oxford Shirt">
+      <h3 class="card-name">Men’s White Oxford Shirt</h3>
+      <div class="card-price">RM149</div>
+    </article>
+
+    <article class="card" data-name="Men’s Grey Wool Trousers">
+      <img src="images/mens_grey_wool_trousers.png" alt="Men’s Grey Wool Trousers">
+      <h3 class="card-name">Men’s Grey Wool Trousers</h3>
+      <div class="card-price">RM229</div>
+    </article>
+
+    <!-- Row 2 -->
+    <article class="card" data-name="Men’s Navy Crewneck">
+      <img src="images/mens_navy_crewneck.png" alt="Men’s Navy Crewneck">
+      <h3 class="card-name">Men’s Navy Crewneck</h3>
+      <div class="card-price">RM109</div>
+    </article>
+
+    <article class="card" data-name="Men’s Black Bomber Jacket">
+      <img src="images/mens_black_bomber.png" alt="Men’s Black Bomber Jacket">
+      <h3 class="card-name">Men’s Black Bomber Jacket</h3>
+      <div class="card-price">RM259</div>
+    </article>
+
+    <article class="card" data-name="Women’s Black Tailored Blazer">
+      <img src="images/womens_black_tailored_blazer.png." alt="Women’s Black Tailored Blazer">
+      <h3 class="card-name">Women’s Black Tailored Blazer</h3>
+      <div class="card-price">RM389</div>
+    </article>
+
+    <!-- Row 3 -->
+    <article class="card" data-name="Women’s White Silk Blouse">
+      <img src="images/womens_white_silk_blouse.png" alt="Women’s White Silk Blouse">
+      <h3 class="card-name">Women’s White Silk Blouse</h3>
+      <div class="card-price">RM199</div>
+    </article>
+
+    <article class="card" data-name="Women’s Beige Wide-Leg Pants">
+      <img src="images/womens_beige_wideleg_pants.png" alt="Women’s Beige Wide-Leg Pants">
+      <h3 class="card-name">Women’s Beige Wide-Leg Pants</h3>
+      <div class="card-price">RM229</div>
+    </article>
+
+    <article class="card" data-name="Women’s Black Midi Dress">
+      <img src="images/womens_black_midi_dress.png" alt="Women’s Black Midi Dress">
+      <h3 class="card-name">Women’s Black Midi Dress</h3>
+      <div class="card-price">RM279</div>
+    </article>
+
+    <!-- Row 4 -->
+    <article class="card" data-name="Women’s Grey Wool Skirt">
+      <img src="images/womens_grey_wool_skirt.png" alt="Women’s Grey Wool Skirt">
+      <h3 class="card-name">Women’s Grey Wool Skirt</h3>
+      <div class="card-price">RM199</div>
+    </article>
+
+    <article class="card" data-name="Men’s Beige Trench Coat">
+      <img src="images/mens_beige_trenchcoat.png" alt="Men’s Beige Trench Coat">
+      <h3 class="card-name">Men’s Beige Trench Coat</h3>
+      <div class="card-price">RM349</div>
+    </article>
+
+    <article class="card" data-name="Men’s Black Leather Jacket">
+      <img src="images/mens_black_leather_jacket.png" alt="Men’s Black Leather Jacket">
+      <h3 class="card-name">Men’s Black Leather Jacket</h3>
+      <div class="card-price">RM499</div>
+    </article>
+
+    <!-- Row 5 -->
+    <article class="card" data-name="Women’s Navy Wrap Dress">
+      <img src="images/womens_navy_wrap_dress.png" alt="Women’s Navy Wrap Dress">
+      <h3 class="card-name">Women’s Navy Wrap Dress</h3>
+      <div class="card-price">RM289</div>
+    </article>
+
+    <article class="card" data-name="Women’s Black Turtleneck">
+      <img src="images/womens_black_turtleneck.png" alt="Women’s Black Turtleneck">
+      <h3 class="card-name">Women’s Black Turtleneck</h3>
+      <div class="card-price">RM129</div>
+    </article>
+
+    <article class="card" data-name="Women’s Beige Long Coat">
+      <img src="images/womens_beige_longcoat.png" alt="Women’s Beige Long Coat">
+      <h3 class="card-name">Women’s Beige Long Coat</h3>
+      <div class="card-price">RM359</div>
+    </article>
+  </div>
+</section>
+
+
+<section class="why-choose-us">
+  <h2>Why Choose Us</h2>
+  <div class="choose-grid">
+    <div class="choose-card big">
+      <img src="images/quality.png" alt="Quality">
+      <h3>Quality</h3>
+      <p>Premium fabrics and modern cuts that stand the test of time.</p>
+    </div>
+    <div class="choose-card small">
+      <img src="images/exclusivity.png" alt="Exclusivity">
+      <h3>Exclusivity</h3>
+      <p>Limited pieces designed for individuality.</p>
+    </div>
+    <div class="choose-card big">
+      <img src="images/guarantee.png" alt="Guarantee">
+      <h3>Guarantee</h3>
+      <p>Confidence in every detail — from stitch to finish.</p>
+    </div>
+    <div class="choose-card small">
+      <img src="images/convenience.png" alt="Convenience">
+      <h3>Convenience</h3>
+      <p>Effortless styles that transition through your day.</p>
+    </div>
+    <div class="choose-card big">
+      <img src="images/designer.png" alt="Designer">
+      <h3>Designer</h3>
+      <p>Inspired by contemporary fashion houses, tailored for you.</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CART MODAL -->
+    <div id="cart-modal" class="modal hidden" onclick="closeIfBackdrop(event)">
+      <div class="modal-content">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <div id="cart-total" class="total"></div>
+        <div class="modal-actions">
+          <button onclick="clearCart()">Clear</button>
+          <button class="primary" onclick="goToCheckout()">Checkout</button>
+        </div>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+    </div>
+    <!-- SIGNUP POPUP (opens on page load) -->
+<div id="signup-modal" class="popup-backdrop hidden" aria-hidden="true">
+  <div class="popup-card" role="dialog" aria-modal="true" aria-labelledby="signup-title">
+    <button class="popup-close" aria-label="Close popup" onclick="closeSignup()">✕</button>
+
+    <div class="popup-left">
+      <h2 id="signup-title">JOIN OUR COMMUNITY</h2>
+      <p class="popup-sub">
+        Be the first to hear about new releases, community updates and exclusive offers.
+      </p>
+
+      <form class="popup-form" onsubmit="event.preventDefault(); closeSignup(); alert('Thanks for subscribing!')">
+        <div class="two-col">
+          <input type="text" placeholder="First Name" aria-label="First Name" />
+          <input type="text" placeholder="Last Name" aria-label="Last Name" />
+        </div>
+        <input type="email" placeholder="Email Address" aria-label="Email Address" required />
+
+        <div class="prefs">
+          <span>Shopping Preferences</span>
+          <label><input type="checkbox" /> Womenswear</label>
+          <label><input type="checkbox" /> Menswear</label>
+        </div>
+
+        <button class="popup-submit" type="submit">SUBSCRIBE</button>
+
+        <small class="legal">
+          By submitting your information, you agree to our website’s
+          <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>.
+        </small>
+      </form>
+    </div>
+
+
+
+
+    <!-- Right visual panel; change the image path if you like -->
+    <div class="popup-right" style="--popup-image: url('images/fashion.jpg');"></div>
+  </div>
+</div>
+
+
+    <footer class="site-footer" id="footer">
+  <div class="footer-grid">
+    <!-- Col 1 -->
+    <div class="footer-col">
+      <h4>Our Stores</h4>
+      <ul class="footer-links">
+        <li><a href="#">Kuala Lumpur</a></li>
+        <li><a href="#">Penang</a></li>
+        <li><a href="#">Johor Bahru</a></li>
+        <li><a href="#">Online Outlet</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 2 -->
+    <div class="footer-col">
+      <h4>Customer Care</h4>
+      <ul class="footer-links">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Payments</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 3 -->
+    <div class="footer-col">
+      <h4>Modern Threads</h4>
+      <ul class="footer-links">
+        <li><a href="#">About Modern Threads</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Loyalty Program</a></li>
+        <li><a href="#">Journal</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 4 (Newsletter) -->
+    <div class="footer-col footer-newsletter">
+      <h4>Join our community</h4>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!')">
+        <div class="nl-wrap">
+          <input type="email" placeholder="Email" aria-label="Email" required />
+          <button type="submit" aria-label="Subscribe">›</button>
+        </div>
+      </form>
+
+      <p class="footer-note">
+        Thoughtful pieces for everyday wear. Designed with comfort, longevity, and ease in mind.
+      </p>
+    </div>
+  </div>
+
+  <div class="subfooter">
+    <p>© 2025 Modern Threads</p>
+  </div>
+</footer>
+
+
+  <script>
+  /* ===== Products (now with image paths) ===== */
+  const products = [
+    { name: "Men’s Black Slim-Fit Blazer", price: "RM399", img: "images/mens_black_slimfit_blazer.png" },
+    { name: "Men’s White Oxford Shirt",    price: "RM149", img: "images/mens_white_oxford_shirt.png" },
+    { name: "Men’s Grey Wool Trousers",    price: "RM229", img: "images/mens_grey_wool_trousers.png" },
+    { name: "Men’s Navy Crewneck",         price: "RM109", img: "images/mens_navy_crewneck.png" },
+    { name: "Men’s Black Bomber Jacket",   price: "RM259", img: "images/mens_black_bomber.png" },
+    { name: "Women’s Black Tailored Blazer", price: "RM389", img: "images/womens_black_tailored_blazer.png" },
+    { name: "Women’s White Silk Blouse",   price: "RM199", img: "images/womens_white_silk_blouse.png" },
+    { name: "Women’s Beige Wide-Leg Pants", price: "RM229", img: "images/womens_beige_wideleg_pants.png" },
+    { name: "Women’s Black Midi Dress",    price: "RM279", img: "images/womens_black_midi_dress.png" },
+    { name: "Women’s Grey Wool Skirt",     price: "RM199", img: "images/womens_grey_wool_skirt.png" },
+    { name: "Men’s Beige Trench Coat",     price: "RM349", img: "images/mens_beige_trenchcoat.png" },
+    { name: "Men’s Black Leather Jacket",  price: "RM499", img: "images/mens_black_leather_jacket.png" },
+    { name: "Women’s Navy Wrap Dress",     price: "RM289", img: "images/womens_navy_wrap_dress.png" },
+    { name: "Women’s Black Turtleneck",    price: "RM129", img: "images/womens_black_turtleneck.png" },
+    { name: "Women’s Beige Long Coat",     price: "RM359", img: "images/womens_beige_longcoat.png" },
+  ];
+
+  /* ===== Cart state (persisted) ===== */
+  let cart = loadCart();
+
+  function loadCart() {
+    try {
+      const raw = localStorage.getItem("cart");
+      const parsed = raw ? JSON.parse(raw) : [];
+      updateCartBadge(parsed);
+      return parsed;
+    } catch {
+      return [];
+    }
+  }
+
+  function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+
+  /* ===== Utils ===== */
+  const money = (str) => Number(String(str).replace(/[^0-9.]/g, "")) || 0;
+  const fmt = (n) => `RM ${n.toFixed(2)}`;
+
+  function updateCartBadge(current = cart) {
+    const count = current.reduce((sum, i) => sum + i.qty, 0);
+    const el = document.getElementById("cart-count");
+    if (el) el.textContent = String(count);
+  }
+
+  /* ===== Scroll helper (unchanged) ===== */
+  function scrollToShop() {
+    document.getElementById("tops").scrollIntoView({ behavior: "smooth" });
+  }
+
+  /* ===== Cart actions ===== */
+  function addToCart(name) {
+    const product = products.find((p) => p.name === name);
+    if (!product) return;
+
+    const existing = cart.find((c) => c.name === name);
+    if (existing) {
+      existing.qty += 1;
+    } else {
+      cart.push({ name, price: product.price, qty: 1 });
+    }
+    saveCart();
+    updateCartBadge();
+  }
+
+  function changeQty(name, delta) {
+    const item = cart.find((c) => c.name === name);
+    if (!item) return;
+    item.qty += delta;
+    if (item.qty <= 0) {
+      cart = cart.filter((c) => c.name !== name);
+    }
+    saveCart();
+    renderCart();
+    updateCartBadge();
+  }
+
+  function removeItem(name) {
+    cart = cart.filter((c) => c.name !== name);
+    saveCart();
+    renderCart();
+    updateCartBadge();
+  }
+
+  /* ===== Modal render + open/close (now with thumbnails) ===== */
+  function renderCart() {
+    const list = document.getElementById("cart-items");
+    const totalEl = document.getElementById("cart-total");
+    if (!list || !totalEl) return;
+
+    list.innerHTML = "";
+    let total = 0;
+
+    cart.forEach((item) => {
+      const matched = products.find((p) => p.name === item.name) || {};
+      const unit = money(matched.price ?? item.price);
+      total += unit * item.qty;
+
+      const li = document.createElement("li");
+      li.className = "cart-row";
+      li.innerHTML = `
+        <img class="thumb" src="${matched.img || ""}" alt="${item.name}">
+        <div class="cart-info">
+          <div class="cart-name">${item.name}</div>
+          <div class="cart-qty">
+            <button class="qty-btn" data-action="dec" data-name="${item.name}" aria-label="Decrease">−</button>
+            <span class="qty">${item.qty}</span>
+            <button class="qty-btn" data-action="inc" data-name="${item.name}" aria-label="Increase">+</button>
+          </div>
+        </div>
+        <div class="cart-right">
+          <span class="cart-price">${fmt(unit)}</span>
+          <button class="remove-btn" data-action="remove" data-name="${item.name}" aria-label="Remove">✕</button>
+        </div>
+      `;
+      list.appendChild(li);
+    });
+
+    totalEl.textContent = cart.length ? `Total: ${fmt(total)}` : "";
+  }
+
+  function showCart() {
+    renderCart();
+    document.getElementById("cart-modal").classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeIfBackdrop(e) {
+    if (e.target.id === "cart-modal") closeModal();
+  }
+
+  function closeModal() {
+    document.getElementById("cart-modal").classList.add("hidden");
+    document.body.style.overflow = "";
+  }
+
+  function clearCart() {
+    cart = [];
+    saveCart();
+    updateCartBadge();
+    document.getElementById("cart-items").innerHTML = "";
+    document.getElementById("cart-total").textContent = "";
+    document.getElementById("cart-modal").classList.add("hidden");
+    document.body.style.overflow = "";
+  }
+
+  function goToCheckout() {
+    if (!cart.length) {
+      alert("Your cart is empty.");
+      return;
+    }
+    alert("Order placed");
+    clearCart();
+  }
+
+  /* ===== Event delegation for +/-/remove in the modal ===== */
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".qty-btn, .remove-btn");
+    if (!btn) return;
+    const action = btn.dataset.action;
+    const name = btn.dataset.name;
+    if (action === "inc") changeQty(name, +1);
+    if (action === "dec") changeQty(name, -1);
+    if (action === "remove") removeItem(name);
+  });
+
+  /* ===== Signup popup control (unchanged) ===== */
+  function openSignup() {
+    const m = document.getElementById('signup-modal');
+    if (!m) return;
+    m.classList.remove('hidden');
+    m.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSignup() {
+    const m = document.getElementById('signup-modal');
+    if (!m) return;
+    m.classList.add('hidden');
+    m.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  // Close signup when clicking the backdrop (not inside the card)
+  document.addEventListener('click', (e) => {
+    const m = document.getElementById('signup-modal');
+    if (!m || m.classList.contains('hidden')) return;
+    if (e.target === m) closeSignup();
+  });
+
+  /* ===== Close on ESC (both modals) ===== */
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    const cartOpen = !document.getElementById("cart-modal")?.classList.contains("hidden");
+    const signupOpen = !document.getElementById("signup-modal")?.classList.contains("hidden");
+    if (cartOpen) closeModal();
+    if (signupOpen) closeSignup();
+  });
+
+  // initial badge + open signup on load
+  document.addEventListener("DOMContentLoaded", () => {
+    updateCartBadge();
+    openSignup();   
+  });
+
+  document.addEventListener("click", (e) => {
+    const card = e.target.closest(".card[data-name]");
+    if (card) addToCart(card.dataset.name);
+  });
+</script>
+
+
+
+  </body>
+</html>
